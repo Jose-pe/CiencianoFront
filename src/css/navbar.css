@@ -1,0 +1,19 @@
+.navbarra{
+    background-color: #d3ceccaf;
+}
+.logo{
+    width: 3.5rem;
+}
+.navlink{
+    color: rgb(124, 25, 25);
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1.5rem !important;
+}
+.navlink:hover{
+    color: rgb(167, 64, 64);
+    font-weight: 600;
+}
+    

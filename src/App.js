@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import './css/bootstrap/bootstrap.css';
+import Navbar from './Componentes/Navbar';
+import {Matchcontent} from './Componentes/Matchcontent';
+import {Stats} from './Componentes/Stats';
+import {CreateMatch} from './Componentes/CreateMatch';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+} from 'react-router-dom';
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Matchcontent></Matchcontent>}>
+        </Route>
+        <Route path='/estadisticas' element={<Stats></Stats>}>
+        </Route>
+        <Route path='/crearpartido' element={<CreateMatch></CreateMatch>}>
+        </Route>
+      
+      </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
