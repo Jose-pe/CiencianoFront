@@ -43,7 +43,7 @@ export function Match({matchs=[]}){
                                                                                 {item.marcador}
                                                                              </div>
                                                                              <div className='col-5'>
-                                                                                           Rival                                  
+                                                                                           {item.rival}                                  
                             
                                                                              </div>
                                                                         </div>

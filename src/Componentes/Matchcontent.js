@@ -23,7 +23,6 @@ export function Matchcontent() {
         .then(response => response.json())
         .then(data=> setMatchs(data.data))
         .catch(error=> console.log(error) )
-
     };
 
 
