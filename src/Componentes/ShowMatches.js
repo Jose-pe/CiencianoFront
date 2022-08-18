@@ -7,7 +7,7 @@ import '../css/showmatches.css';
 import { useEffect, useState } from 'react';
 
 export function ShowMatches () {
-    const url = 'http://cienciano.in/api/partidos'
+    const url = 'http://cienciano.in/api/todospartidos'
 
     const [matchs, setMatchs] = useState([]);
 

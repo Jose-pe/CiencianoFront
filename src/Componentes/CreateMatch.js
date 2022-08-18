@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom"
 import '../css/creatematch.css';
 
 export function CreateMatch(){
@@ -39,6 +40,7 @@ export function CreateMatch(){
    const inputresultado = e => setResultado(e.target.value);
    const inputcompetencia = e => setCompetencia(e.target.value);
 
+   const navigate = useNavigate() 
 
    const create_match = e =>{
         e.preventDefault();
@@ -56,6 +58,8 @@ export function CreateMatch(){
           fetch("http://cienciano.in/api/partidos", requestOptions)
           .then(response => response.json())
           .then(res => console.log(res));
+
+          navigate('/');
   };
 
 
@@ -116,7 +120,7 @@ export function CreateMatch(){
             <input type="text" onChange={inputresultado} value={resultado} className='form-control inputs' placeholder="Resultado"/>
             </div>
             <div>
-                <a type='submit' onClick={create_match} className='btn btn-primary'>Guardar</a>
+                <button type='submit' onClick={create_match} className='btn btn-primary'>Guardar</button>
             </div>            
             
         </div>
