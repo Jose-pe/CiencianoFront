@@ -26,11 +26,22 @@ export function ShowMatches () {
   
 
     return(
-        <div>
-            
-        
+        <div className='container-fluid'>
+            <div className='row'>
+                <div className='col-12' id='titlecontainer'>
+                <h2 className='titleallmatchs'>TODOS LOS PARTIDOS</h2>  
+                </div>
+               
+            </div>
+            <div className='container' id='allmatchs'>
+                <div className='row' id='content-matchs' >
+                          <div className='col-12'>
+                          <Match matchs={matchs} />       
+                          </div>          
+                </div>
+                 
+            </div>
           
-            <Match matchs={matchs} />
             
               
             

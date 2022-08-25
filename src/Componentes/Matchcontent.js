@@ -35,11 +35,11 @@ export function Matchcontent() {
         <div className='container'>
                 <div className='row'>
                         <div className='col-12 text-center'> 
-                            <h2 className='titulo'>ULTIMOS PARTIDOS</h2>
+                            <h2 className='title'>ULTIMOS PARTIDOS</h2>
                         </div>
                 </div>
                 <div className='row justify-content-center'>
-                        <div className='col-6 text-center' id='matchcontent'> 
+                        <div className='col-8 text-center' id='matchcontent'> 
                           
                             <div>
                             <Match
