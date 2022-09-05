@@ -1,18 +1,14 @@
 import React from 'react';
 import '../css/matchcontent.css';
 import {Match} from '../Componentes/Match';
-import Button_more from './Button_more';
+
 import { useEffect, useState } from 'react';
+import {Link} from 'react-router-dom';
 
 export function Matchcontent() {
 
     //Mostrar Mas partidos
-    const renewMatch = () =>{
-       let match = document.getElementsByClassName('match');
-       match[0].style.display='none';
-       match[1].style.display='none';
-       
-    }
+   
 
     const [matchs, setMatchs] = useState([]);
     
@@ -21,7 +17,7 @@ export function Matchcontent() {
     const fetchMatchs= (url)=>{
         fetch(url)
         .then(response => response.json())
-        .then(data=> setMatchs(data.data))
+        .then(data=> setMatchs(data.data))        
         .catch(error=> console.log(error) )
     };
 
@@ -47,11 +43,15 @@ export function Matchcontent() {
                             />
                             </div>
                             <div className='row justify-content-center'>
-                        <Button_more 
-                            renewMatch={renewMatch}
-                        />
+                            <div className='col-12'>
+                            <div className='row'>
+                      <div className='col-12'>
+                        <Link className="btn btn-danger btn-lg" to={'/renewmatch'}  role="button"> Más Partidos</Link>
+                       </div>  
+                </div>
                             </div>
-                        </div>
+                            </div>
+                            </div>
                 </div>
                
         </div>

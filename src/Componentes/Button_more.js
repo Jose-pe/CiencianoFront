@@ -1,13 +1,19 @@
 import React from 'react';
 import '../css/buttonmore.css';
 
-function Button_more({renewMatch}){
+
+function Button_more(){
+
+            
     return(
-        <div className='col-12'>
-              
-              <a className='btn btn-danger btn-lg' onClick={renewMatch}>Más Partidos</a>
-                 
-        </div>
+       
+          <div>
+            <p></p>
+          </div>    
+                            
+   
+    
+
     );
 }
 export default Button_more;

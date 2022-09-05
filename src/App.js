@@ -12,6 +12,7 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
+import { RenewMatch } from './Componentes/RenewMatch';
 function App() {
   //RUTAS
   return (
@@ -26,6 +27,8 @@ function App() {
         <Route path='/partidos' element={<ShowMatches></ShowMatches>}>
         </Route>
         <Route path='/crearpartido' element={<CreateMatch></CreateMatch>}>
+        </Route>
+        <Route path='/renewmatch' element={<RenewMatch></RenewMatch>}>
         </Route>
       
       </Routes>

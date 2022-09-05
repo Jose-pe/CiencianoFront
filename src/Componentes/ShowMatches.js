@@ -1,9 +1,6 @@
 import React from 'react';
 import {Match} from '../Componentes/Match';
-
 import '../css/showmatches.css';
-
-
 import { useEffect, useState } from 'react';
 
 export function ShowMatches () {
@@ -39,7 +36,7 @@ export function ShowMatches () {
                           <Match matchs={matchs} />       
                           </div>          
                 </div>
-                 
+             
             </div>
           
             
