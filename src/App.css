@@ -1,5 +1,9 @@
+*{
+  text-decoration: none !important;
+}
 body{
-  background-color: #bbb6b6 !important;
+  background-color: #bbb6b6 !important; 
+  
 }
 .row {
   --bs-gutter-x:0rem !important;

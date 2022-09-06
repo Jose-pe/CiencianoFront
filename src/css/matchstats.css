@@ -1,0 +1,54 @@
+#statspanel{
+    background-color: rgba(29, 26, 26, 0.795);
+    border: 6px solid rgba(143, 67, 67, 0.952);
+    border-radius: 8rem;
+    margin-top: 3rem;
+    color: rgb(34, 192, 131);
+}
+.titlesstats{
+    font-size: 1.3rem;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 0.2rem;
+    color: rgb(34, 192, 131);
+}
+
+.matchdate{
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Play', sans-serif;
+    color: rgb(142, 240, 138);
+}
+.matchrival{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(214, 187, 34);
+    letter-spacing: 0.3rem;    
+}
+.matchstatsnum{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.3rem;    
+}
+#leagues{
+    font-family: 'Fjalla One', sans-serif;
+    font-size:1.8rem;
+    color: rgb(233, 135, 135);
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+}
+#red{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: rgb(218, 81, 81);
+    letter-spacing: 0.3rem;   
+}
+#yellow{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: rgb(255, 219, 59);
+    letter-spacing: 0.3rem;   
+}

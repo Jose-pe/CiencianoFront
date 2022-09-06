@@ -13,6 +13,7 @@ import {
   Link,
 } from 'react-router-dom';
 import { RenewMatch } from './Componentes/RenewMatch';
+import { ShowMatchComplete } from './Componentes/ShowMatchComplete';
 function App() {
   //RUTAS
   return (
@@ -30,6 +31,9 @@ function App() {
         </Route>
         <Route path='/renewmatch' element={<RenewMatch></RenewMatch>}>
         </Route>
+        <Route path='/datosdematch/:id' element={<ShowMatchComplete></ShowMatchComplete>}>
+        </Route>
+        
       
       </Routes>
     </div>

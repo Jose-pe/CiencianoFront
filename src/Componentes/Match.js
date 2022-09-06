@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../css/match.css';
 
 
@@ -12,7 +13,9 @@ export function Match({matchs=[]}){
         <div className='match'>
             {
                                               matchs.map((item, index)=>(
+                                                
                                                 <div  key={index} className='container mt-4' >
+                                                <Link to={'/datosdematch/'+ item.id}>
                                                 <div className='row justify-content-center'>
                                                         <div className='col-9  text-center'>
                                                         <div className='alert alert-secondary' role="alert" id='scoreboard'>
@@ -64,7 +67,7 @@ export function Match({matchs=[]}){
                                                         </div>
                                                 </div>
                             
-                                                
+                                                </Link>
                                             </div>   
 
                                                 ))                                                

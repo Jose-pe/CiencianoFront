@@ -52,7 +52,7 @@ export function RenewMatch(){
                     <div className='col-12'>
                     <div className='row'>
               <div className='col-12'>
-                <Link className="btn btn-danger btn-lg" to={'/renewmatch'}  role="button">Más Partidos</Link>
+                <Link className="btn btn-danger btn-lg" to={'/partidos'}  role="button">Más Partidos</Link>
                </div>  
         </div>
                     </div>
