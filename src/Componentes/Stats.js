@@ -59,8 +59,12 @@ export function Stats(){
                  <div className='col-6 text-center' id='contentstats'>
                  <h4 className='subtitle'>Promedio de Conversion de Goles</h4>   
                  <div className='row justify-content-center'>
-                        <div className='col-12'>      
-                                <p>que fuyente </p>
+                        <div className='col-10 mt-2 mb-4'>      
+                        <div class="progress">
+                         <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+
+                         </div>
+                        </div>
                         </div>                       
                  </div>
                  </div>       
