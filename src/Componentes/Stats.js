@@ -60,15 +60,32 @@ export function Stats(){
                  <h4 className='subtitle'>Promedio de Conversion de Goles</h4>   
                  <div className='row justify-content-center'>
                         <div className='col-10 mt-2 mb-4'>      
-                        <div class="progress">
-                         <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
-
-                         </div>
-                        </div>
+                                <p>75%</p>
                         </div>                       
                  </div>
                  </div>       
                  </div>
+
+                  <div className='row justify-content-center'>
+                 <div className='col-6 text-center' id='contentstats'>
+                 <h4 className='subtitle'>Resultados de la Temporada</h4>   
+                 <div className='row justify-content-center'>
+                        <div className='col-4 mt-2 mb-4'>      
+                                <h4 className='litletitle'>Victorias</h4>
+                                <p>50</p>
+                        </div>      
+                        <div className='col-4 mt-2 mb-4'>      
+                                <h4 className='litletitle'>Empates</h4>
+                                <p>50</p>
+                        </div>      
+                        <div className='col-4 mt-2 mb-4'>      
+                                <h4 className='litletitle'>Derrotas</h4>
+                                <p>50</p>
+                        </div>                       
+                 </div>
+                 </div>       
+                 </div>
+                 
                 </div>
 
                 
