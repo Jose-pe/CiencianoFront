@@ -22,3 +22,9 @@
     font-size: 1.4rem;
     color: rgb(235, 157, 157);
 }
+.data{
+    color: whitesmoke;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
