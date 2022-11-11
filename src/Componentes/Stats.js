@@ -11,7 +11,20 @@ export function Stats({stats=[]}){
                         </div>
 
                 </div>
+             
                 <div className='row justify-content-center' id='matchcontent'>
+                <div className='row justify-content-center mt-3'>
+                <div className='col-4 text-center'>
+                <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option value="">2019</option>
+                                <option value="">2020</option>
+                                <option value="">2021</option>
+                                <option value="">2022</option>
+                                <option value="">2023</option>
+
+                        </select>
+                </div>
+                </div>
                 <div className='col-6 text-center' id='contentstats'>
                         <h3 className='subtitle' >ESTADISTICAS GLOBALES</h3>
                         <div className='row justify-content-center' >
