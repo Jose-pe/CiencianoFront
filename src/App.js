@@ -3,14 +3,15 @@ import './App.css';
 import './css/bootstrap/bootstrap.css';
 import Navbar from './Componentes/Navbar';
 import {Matchcontent} from './Componentes/Matchcontent';
-import {Stats} from './Componentes/Stats';
+
 import {CreateMatch} from './Componentes/CreateMatch';
 import {ShowMatches} from './Componentes/ShowMatches';
+import {ShowStats} from './Componentes/ShowStats';
 import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
+ 
 } from 'react-router-dom';
 import { RenewMatch } from './Componentes/RenewMatch';
 import { ShowMatchComplete } from './Componentes/ShowMatchComplete';
@@ -23,7 +24,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Matchcontent></Matchcontent>}>
         </Route>
-        <Route path='/estadisticas' element={<Stats></Stats>}>
+        <Route path='/estadisticas' element={<ShowStats></ShowStats>}>
         </Route>
         <Route path='/partidos' element={<ShowMatches></ShowMatches>}>
         </Route>

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/stats.css';
 
-export function Stats(){
+export function Stats({stats=[]}){
 
     return (
         <div className='container'>
@@ -19,7 +19,7 @@ export function Stats(){
                         <div className='row justify-content-center'>
                                    <h4 className='litletitle'>Goles</h4>     
                         </div>
-                                <p className='data'>500</p>      
+                                <p className='data'>{stats.goles}</p>      
                        </div>         
                  </div>
                  <div className='row justify-content-center' >
@@ -27,7 +27,7 @@ export function Stats(){
                         <div className='row justify-content-center'>
                                    <h4 className='litletitle'>Tiros</h4>     
                         </div>
-                                <p className='data'>500</p>      
+                                <p className='data'>{stats.tiros}</p>      
                        </div>         
                  </div> 
                  <div className='row justify-content-center' >
@@ -35,7 +35,7 @@ export function Stats(){
                         <div className='row justify-content-center'>
                                    <h4 className='litletitle'>Tiros al Arco</h4>     
                         </div>
-                                <p className='data'>500</p>      
+                                <p className='data'>{stats.tiros_arco}</p>      
                        </div>         
                  </div>      
                  <div className='row justify-content-center' >
@@ -43,7 +43,7 @@ export function Stats(){
                         <div className='row justify-content-center'>
                                    <h4 className='litletitle'>Pases</h4>     
                         </div>
-                                <p className='data'>500</p>      
+                                <p className='data'>{stats.pases}</p>      
                        </div>         
                  </div>        
                  <div className='row justify-content-center' >
@@ -51,7 +51,7 @@ export function Stats(){
                         <div className='row justify-content-center'>
                                    <h4 className='litletitle'>Faltas</h4>     
                         </div>
-                                <p className='data'>500</p>      
+                                <p className='data'>{stats.faltas}</p>      
                        </div>         
                  </div>               
                 </div>
@@ -72,15 +72,15 @@ export function Stats(){
                  <div className='row justify-content-center'>
                         <div className='col-4 mt-2 mb-4'>      
                                 <h4 className='litletitle'>Victorias</h4>
-                                <p className='data'>50</p>
+                                <p className='data'>{stats.victorias}</p>
                         </div>      
                         <div className='col-4 mt-2 mb-4'>      
                                 <h4 className='litletitle'>Empates</h4>
-                                <p className='data'>50</p>
+                                <p className='data'>{stats.empates}</p>
                         </div>      
                         <div className='col-4 mt-2 mb-4'>      
                                 <h4 className='litletitle'>Derrotas</h4>
-                                <p className='data'>50</p>
+                                <p className='data'>{stats.derrotas}</p>
                         </div>                       
                  </div>
                  </div>       
