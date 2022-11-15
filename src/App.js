@@ -15,6 +15,7 @@ import {
 } from 'react-router-dom';
 import { RenewMatch } from './Componentes/RenewMatch';
 import { ShowMatchComplete } from './Componentes/ShowMatchComplete';
+import { SearchSeason } from './Componentes/SearchSeason';
 function App() {
   //RUTAS
   return (
@@ -24,7 +25,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Matchcontent></Matchcontent>}>
         </Route>
-        <Route path='/estadisticas' element={<ShowStats></ShowStats>}>
+        <Route path='/estadisticas' element={<SearchSeason></SearchSeason>}>
         </Route>
         <Route path='/partidos' element={<ShowMatches></ShowMatches>}>
         </Route>
@@ -33,6 +34,8 @@ function App() {
         <Route path='/renewmatch' element={<RenewMatch></RenewMatch>}>
         </Route>
         <Route path='/datosdematch/:id' element={<ShowMatchComplete></ShowMatchComplete>}>
+        </Route>
+        <Route path='/estadisticatemporada/:temporada' element={<ShowStats></ShowStats>}>
         </Route>
         
       

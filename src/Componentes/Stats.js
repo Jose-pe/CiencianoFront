@@ -5,12 +5,7 @@ export function Stats({stats=[]}){
 
     return (
         <div className='container'>
-                <div className='row justify-content-center'>
-                        <div className='col-8 text-center'>
-                                <h2 className='title'> ESTADISTICAS POR TEMPORADA</h2>
-                        </div>
-
-                </div>
+             
              
                 <div className='row justify-content-center' id='matchcontent'>
                
