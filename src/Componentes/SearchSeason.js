@@ -23,7 +23,7 @@ export function SearchSeason () {
         <div className='row justify-content-center mt-3' id='content-matchs'>
            
               <div className='col-4 text-center'>
-              <select className="form-select form-select-lg mb-3 mt-3" value={selected} onChange={handleChange} >
+              <select className="form-select form-select-lg mb-3 mt-5" value={selected} onChange={handleChange} >
                               <option value="2019">2019</option>
                               <option value="2020">2020</option>
                               <option value="2021">2021</option>
