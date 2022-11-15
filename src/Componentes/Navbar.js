@@ -14,7 +14,7 @@ function Navbar(){
                 <div className='links-container col-6'>
                     <div className='row'>
                         <div className='col-9 text-end mb-2'>
-                        <Link to={'/'} className='navlink'>Home</Link>
+                        <Link to={'/'} className='navlink'>Inicio</Link>
                         <Link to={'/partidos'} className='navlink'>Partidos</Link>                        
                         <Link  to={'/estadisticas'} className='navlink'>Estadisticas</Link>
                         </div>
