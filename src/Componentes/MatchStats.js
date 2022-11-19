@@ -18,7 +18,7 @@ export function MatchStats({datamatch=[]}){
                         </div>
                         <div className='row justify-content-center mt-3'>
                              <div className='col-4'>
-                             <p id='leagues'>{datamatch.condicion}</p>
+                             <p id='condition'>{datamatch.condicion}</p>
                              </div>   
                         </div>
                         <div className='row justify-content-center mb-4 mt-2'>

@@ -11,6 +11,12 @@
     letter-spacing: 0.2rem;
     color: rgb(34, 192, 131);
 }
+#condition{
+    font-size: 1.8rem;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 0.2rem;
+    color: rgb(221, 130, 94);
+}
 
 .matchdate{
     font-size: 1.4rem;
