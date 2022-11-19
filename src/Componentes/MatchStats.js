@@ -16,6 +16,11 @@ export function MatchStats({datamatch=[]}){
                              <p id='leagues'>{datamatch.competencia}</p>
                              </div>   
                         </div>
+                        <div className='row justify-content-center mt-3'>
+                             <div className='col-4'>
+                             <p id='leagues'>{datamatch.condicion}</p>
+                             </div>   
+                        </div>
                         <div className='row justify-content-center mb-4 mt-2'>
                             <div className='col-4'>
                             <p className='matchdate'> <strong className='titlesstats'> Fecha </strong><br/>   
