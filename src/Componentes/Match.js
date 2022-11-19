@@ -63,6 +63,14 @@ export function Match({matchs=[]}){
                                                                     </p>
                                                                 </div>
                                                             </div>
+                                                            <div className='row'>
+                                                             
+                                                                <div className='col-12'>
+                                                                    <p id='condicion'>
+                                                                    {item.condicion}
+                                                                    </p>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         </div>
                                                 </div>

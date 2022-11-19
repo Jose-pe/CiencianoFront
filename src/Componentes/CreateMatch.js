@@ -19,9 +19,10 @@ export function CreateMatch(){
    const[tarjeta_roja, setTarjeta_roja] = useState([]);
    const[fuera_juego, setFuera_juego] = useState([]);
    const[tiro_esquina, setTiro_esquina] = useState([]);
-   const[resultado, setResultado] = useState([]);
-   const[competencia, setCompetencia] = useState([]);
-   
+   const[resultado, setResultado] = useState('');
+   const[competencia, setCompetencia] = useState('');
+   const[condicion, setCondicion]= useState('');
+
    const inputrival = e => setRival(e.target.value);
    const inputmarcador = e => setMarcador(e.target.value);
    const inputfecha = e => setFecha(e.target.value);
@@ -39,13 +40,14 @@ export function CreateMatch(){
    const inputtiroesquina = e => setTiro_esquina(e.target.value);
    const inputresultado = e => setResultado(e.target.value);
    const inputcompetencia = e => setCompetencia(e.target.value);
-
+   const inputcondicion = e => setCondicion(e.target.value);
+   
    const navigate = useNavigate() 
 
    const create_match = e =>{
-        e.preventDefault();
+       e.preventDefault();
 
-        const data = {rival, marcador, fecha, competencia , hora, goles_favor, goles_encontra, tiros, tiros_arco, posesion_balon, pases, faltas, tarjeta_amarilla, tarjeta_roja, fuera_juego, tiro_esquina, resultado};
+        const data = {rival, marcador, fecha, competencia , hora, goles_favor, goles_encontra, tiros, tiros_arco, posesion_balon, pases, faltas, tarjeta_amarilla, tarjeta_roja, fuera_juego, tiro_esquina, resultado, condicion};
         const requestOptions = {
             method: "POST",
             headers: { 
@@ -75,7 +77,15 @@ export function CreateMatch(){
             <input type="text" onChange={inputmarcador} value={marcador} className='form-control inputs' placeholder="Marcador"/>
             </div>
             <div>
-            <input type="text" onChange={inputcompetencia} value={competencia} className='form-control inputs' placeholder="Competencia"/>
+
+            <select className='form-select inputs' onChange={inputcompetencia} value={competencia} >
+                <option selected>competencia</option>
+                <option value="Liga 1">Liga 1</option>
+                <option value="Liga 2">Liga 2</option>
+                <option value="Copa Sudamericana">Sudamericana</option>
+                <option value="Copa Libertadores">Libertadores</option>
+                
+            </select>
             </div>
             <div>
             <input type="date" onChange={inputfecha} value={fecha} className='form-control inputs' placeholder="Fecha"/>
@@ -117,7 +127,22 @@ export function CreateMatch(){
             <input type="number" onChange={inputtiroesquina} value={tiro_esquina} className='form-control inputs' placeholder="Tiros de esquina"/>
             </div>
             <div>
-            <input type="text" onChange={inputresultado} value={resultado} className='form-control inputs' placeholder="Resultado"/>
+            <select className='form-select inputs' onChange={inputresultado} value={resultado} >
+                <option selected>Resultado</option>
+                <option value="Victoria">Victoria</option>
+                <option value="Derrota">Derrota</option>
+                <option value="Empate">Empate</option>
+
+            </select>
+            </div>
+            <div>
+            <select className='form-select inputs' onChange={inputcondicion} value={condicion} >
+                <option selected>Condicion</option>    
+                <option value="Local">Local</option>
+                <option value="Visitante">Visitante</option>
+                <option value="Cancha Neutral">Cancha Neutral</option>
+
+            </select>
             </div>
             <div>
                 <button type='submit' onClick={create_match} className='btn btn-primary'>Guardar</button>

@@ -24,6 +24,7 @@ export function SearchSeason () {
            
               <div className='col-4 text-center'>
               <select className="form-select form-select-lg mb-3 mt-5" value={selected} onChange={handleChange} >
+                              <option selected>Seleccione una temporada</option>  
                               <option value="2019">2019</option>
                               <option value="2020">2020</option>
                               <option value="2021">2021</option>
