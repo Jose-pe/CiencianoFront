@@ -7,21 +7,34 @@ import { useEffect, useState } from 'react';
 
 export function ShowMatchComplete(){
 
+
+    
+   
     const {id}= useParams();
 
-    const url = 'http://cienciano.in/api/partidos/' + id;
+    const url = 'http://192.168.1.66/api/partidos/' + id;
 
     const [datamatch, setDataMatch] = useState([]);
+    const [datagols, setDataGols] = useState([]);
     //console.log(url);
     const fetchMatchs= (url)=>{
         fetch(url)
         .then(response => response.json())
-        .then(data=> setDataMatch(data))
+        .then(data=> setDataMatch(data.datamatch))
         .catch(error=> console.log(error) )
 
     };
+    const fetchGols= (url)=>{
+        fetch(url)
+        .then(response => response.json())
+        .then(data=> setDataGols(data.goldata))
+        .catch(error=> console.log(error) )
+
+    };
+
     useEffect(() =>{
-        fetchMatchs(url);                
+        fetchMatchs(url);    
+        fetchGols(url);            
     },[]);
     console.log();
 
@@ -36,7 +49,7 @@ export function ShowMatchComplete(){
             
           <MatchStats
               datamatch={datamatch}
-            
+               datagols={datagols} 
             />
               
             </div>

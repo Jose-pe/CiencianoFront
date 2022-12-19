@@ -14,7 +14,7 @@ export function RenewMatch(){
      
         
  
-        let urlpagination = 'http://cienciano.in/api/partidos?page=' + pagenumber;
+        let urlpagination = 'http://192.168.1.66/api/partidos?page=' + pagenumber;
         
         
         //console.log("fetchea a " + urlpagination);

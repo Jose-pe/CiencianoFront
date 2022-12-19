@@ -4,11 +4,15 @@ import '../css/matchstats.css';
 
 
 
-export function MatchStats({datamatch=[]}){
 
+export function MatchStats({datamatch=[], datagols=[]} ){
+     
+   
 
     return(
+   
         <div className='container'>
+        
             <div className='row justify-content-center'>
                     <div className='col-10 text-center' id='statspanel'>
                     <div className='row justify-content-center mt-3'>
@@ -86,6 +90,41 @@ export function MatchStats({datamatch=[]}){
                              </div>   
                         </div>
                     </div>
+                    <div className='container' id='golespanel'>
+                    <div className='row justify-content-center'>
+                         <div className='col-10 mt-4'>
+                         <h3 className='text-center'>Goles del Partido</h3>
+                         </div>
+                        
+                    </div>
+                    {
+                         datagols.map((gols, index)=>(
+
+                              <div key={index}>
+                                    <div className='row justity-content-center'>
+                           <div className='col-4'>
+                              <p className='text-center'>Autor: {gols.autor} </p>
+                           </div>   
+                           <div className='col-4'>
+                              <p className='text-center'>min: {gols.minuto_juego}</p>
+                           </div> 
+                           <div className='col-4'>
+                              <p className='text-center'>Tipo: {gols.tipo_gol}</p>
+                           </div> 
+                              </div>
+                             
+                              </div>
+                         ))
+                        // console.log("hola" + datagols)
+                    }
+                  
+                    
+                    
+                   
+
+
+                    </div>
+                  
             </div>
          
         </div>

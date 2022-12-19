@@ -57,17 +57,19 @@ export function CreateMatch(){
             body: JSON.stringify(data)
           };
 
-          fetch("http://cienciano.in/api/partidos", requestOptions)
+          fetch("http://192.168.1.66/api/partidos", requestOptions)
           .then(response => response.json())
           .then(res => console.log(res));
-
-          navigate('/');
+          if (goles_favor !== '0') {
+                navigate('/addgol');  
+          }
+          else{
+                navigate('/');
+          }
+          
   };
 
-
-
-
-    return(
+  return(
         <div className='container' id='form_main'>
            
             <div>
@@ -145,9 +147,8 @@ export function CreateMatch(){
             </select>
             </div>
             <div>
-                <button type='submit' onClick={create_match} className='btn btn-primary'>Guardar</button>
-            </div>            
-            
+                <button type='submit' onClick={create_match} className='btn btn-primary mb-4 '>Guardar</button>
+            </div>                                    
         </div>
     );
 }

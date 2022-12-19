@@ -8,7 +8,7 @@ export function ShowStats () {
     
     const {temporada}= useParams();
     
-    const url = 'http://cienciano.in/api/statstemporada/' + temporada;
+    const url = 'http://192.168.1.66/api/statstemporada/' + temporada;
 
     const [stats, setStats] = useState([]);
 

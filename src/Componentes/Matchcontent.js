@@ -1,7 +1,6 @@
 import React from 'react';
 import '../css/matchcontent.css';
 import {Match} from '../Componentes/Match';
-
 import { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
 
@@ -12,7 +11,7 @@ export function Matchcontent() {
 
     const [matchs, setMatchs] = useState([]);
     
-    let url = "http://cienciano.in/api/partidos";
+    let url = "http://192.168.1.66/api/partidos";
 
     const fetchMatchs= (url)=>{
         fetch(url)

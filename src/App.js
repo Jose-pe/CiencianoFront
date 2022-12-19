@@ -16,6 +16,7 @@ import {
 import { RenewMatch } from './Componentes/RenewMatch';
 import { ShowMatchComplete } from './Componentes/ShowMatchComplete';
 import { SearchSeason } from './Componentes/SearchSeason';
+import { CreateGol } from './Componentes/CreateGol';
 function App() {
   //RUTAS
   return (
@@ -36,6 +37,8 @@ function App() {
         <Route path='/datosdematch/:id' element={<ShowMatchComplete></ShowMatchComplete>}>
         </Route>
         <Route path='/estadisticatemporada/:temporada' element={<ShowStats></ShowStats>}>
+        </Route>
+        <Route path='/addgol' element={<CreateGol></CreateGol>}>
         </Route>
         
       
