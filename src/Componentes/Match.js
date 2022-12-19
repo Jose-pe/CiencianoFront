@@ -26,7 +26,7 @@ export function Match({matchs=[]}){
                                                                         
                                                                         <div className='col-4 text-center'>
                                                                             <p id='datadate'>
-                                                                                 {item.fecha}   
+                                                                            <i class="fa-solid fa-calendar"></i> {item.fecha}   
                                                                             </p>
                                                                         </div>
                                                                         <div className='col-4 justify-content-center'>
@@ -36,7 +36,7 @@ export function Match({matchs=[]}){
                                                                         </div>
                                                                         <div className='col-4 justify-content-center'>
                                                                             <p id='datadate'>
-                                                                                    {item.hora}
+                                                                            <i className="fa-solid fa-clock"></i> {item.hora}
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -67,7 +67,7 @@ export function Match({matchs=[]}){
                                                              
                                                                 <div className='col-12'>
                                                                     <p id='condicion'>
-                                                                    {item.condicion}
+                                                                    <i class="fa-solid fa-house-chimney-window"></i> {item.condicion}
                                                                     </p>
                                                                 </div>
                                                             </div>

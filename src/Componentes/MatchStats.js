@@ -28,13 +28,13 @@ export function MatchStats({datamatch=[], datagols=[]} ){
                         <div className='row justify-content-center mb-4 mt-2'>
                             <div className='col-4'>
                             <p className='matchdate'> <strong className='titlesstats'> Fecha </strong><br/>   
-                            {datamatch.fecha}</p>
+                            <i class="fa-solid fa-calendar"></i> {datamatch.fecha}</p>
                             </div>
                             <div className='col-4'>
                             <p className='matchrival'> <strong className='titlesstats'> Rival </strong> <br/> {datamatch.rival}</p>
                             </div>
                             <div className='col-4'>
-                            <p className='matchdate'><strong className='titlesstats'> Hora </strong><br/> {datamatch.hora}</p>
+                            <p className='matchdate'><strong className='titlesstats'> Hora </strong><br/><i className="fa-solid fa-clock"></i> {datamatch.hora}</p>
                             </div>
                         </div>
                         <div className='row justify-content-center'>
@@ -92,28 +92,33 @@ export function MatchStats({datamatch=[], datagols=[]} ){
                     </div>
                     <div className='container' id='golespanel'>
                     <div className='row justify-content-center'>
-                         <div className='col-10 mt-4'>
-                         <h3 className='text-center'>Goles del Partido</h3>
+                         <div className='col-10 mt-4 mb-4'>
+                         <h3 className='text-center titlegol'>Goles del Partido</h3>
                          </div>
                         
                     </div>
                     {
                          datagols.map((gols, index)=>(
 
-                              <div key={index}>
-                                    <div className='row justity-content-center'>
-                           <div className='col-4'>
-                              <p className='text-center'>Autor: {gols.autor} </p>
+                              <div key={index} className='golpanelcontainer'>
+                              <div className='golpanel'>
+                                        
+                                  
+                         
+                           <div className='col-4 '>
+                              <p className='text-center goldata'><i className="fa-regular fa-futbol"> </i>  {gols.autor} </p>
                            </div>   
                            <div className='col-4'>
-                              <p className='text-center'>min: {gols.minuto_juego}</p>
+                              <p className='text-center goldata'><i className="fa-solid fa-clock"></i> {gols.minuto_juego}</p>
                            </div> 
                            <div className='col-4'>
-                              <p className='text-center'>Tipo: {gols.tipo_gol}</p>
+                              <p className='text-center goldata'><i class="fa-solid fa-star"></i> {gols.tipo_gol}</p>
                            </div> 
                               </div>
-                             
+                              
                               </div>
+                              
+                             
                          ))
                         // console.log("hola" + datagols)
                     }
